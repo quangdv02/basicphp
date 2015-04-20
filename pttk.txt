@@ -3,3 +3,6 @@ categories: id, name, parent_id, path, position
 category_product: category_id, product_id
 products: id, name, img, price, qty, status
 images: id, product_id, img
+test conflict
+
+in line 8
