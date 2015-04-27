@@ -1,11 +1,12 @@
 users: id, username, password, fullname, email, age, phone, address, level
-categories: id, name, parent_id, path, position
+categories: id, name, parent_id, level, position
 category_product: category_id, product_id
-products: id, name, img, price, qty, status
+products: id, name, img, des, price, qty, brand_id, status
 images: id, product_id, img
-test conflict
+brands: id, name
+orders: id, user_id, name, phone, address, email, req, order_time
+order_detail: order_id, product_id, name, price, img, qty
 
-in line 8
-conflic from iss53
-line 7
-line 8
+product n-n category
+product n-1 brand
+product 1-n img
