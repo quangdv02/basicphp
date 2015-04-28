@@ -1,11 +1,14 @@
-users: id, username, password, fullname, email, age, phone, address, level
+users: id, email, password, fullname, gender, phone, address, level
 categories: id, name, parent_id, level, position
 category_product: category_id, product_id
-products: id, name, img, des, price, qty, brand_id, status
+products: id, name, img, des, price, qty, brand_id, status, created_at, updated_at
 images: id, product_id, img
 brands: id, name
-orders: id, user_id, name, phone, address, email, req, order_time
+sliders: id, product_id, img, position
+orders: id, user_id, name, phone, address, email, req, created_at
 order_detail: order_id, product_id, name, price, img, qty
+news: id, title, img, content, created_at, updated_at
+comments:  id, news_id, user_id, content, created_at, updated_at
 
 product n-n category
 product n-1 brand

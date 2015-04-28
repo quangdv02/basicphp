@@ -13,3 +13,5 @@ doc/*.txt
 doc/**/*.txt
 # bỏ qua tập tin readme.txt
 readme.txt
+/.idea
+mylog.log
